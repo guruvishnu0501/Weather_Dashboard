@@ -40,7 +40,7 @@ async function getWeather(lat,lon) {
 function updateCurrent(loc,w){
     const c=w.current;
     document.getElementById("locationName").textContent=`${loc.name}, ${loc.country}`;
-    Date.textContent=new Date().toDateString();
+    date.textContent=new Date().toDateString();
     currentIcon.textContent=getIcon(c.weather_code);
     temperature.textContent=Math.round(c.temperature_2m)+'°C';  //alt+(0176)
     description.textContent=getText(c.weather_code);
