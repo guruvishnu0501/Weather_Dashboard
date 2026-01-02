@@ -96,6 +96,6 @@ async function searchWeather() {
     loading.style.display='none';
 }
 
-cityInput.addEvenntListener('keypress', e=>{
+cityInput.addEventListener('keypress', e=>{
     if(e.key==='Enter') searchWeather();
 });
